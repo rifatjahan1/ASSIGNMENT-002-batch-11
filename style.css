@@ -23,6 +23,7 @@ body {
     background-color: blueviolet;
     height: 2rem;
     color: aliceblue;
+    border-radius: 8px;
 }
 
 .navbar {
@@ -92,6 +93,10 @@ body {
 .nav-button:hover {
     background-color: #ff4500;
 }
+.border{
+    display: none;
+    background-color:  rgb(254, 163, 1);
+}
 
 /*nav section ended*/
 /* banner-section */
@@ -101,7 +106,12 @@ body {
     align-items: center;
     gap: 3rem;
     padding: 2rem 0;
+    
 }
+/*.banner-border{
+    display: none;
+    border-top: 0.5px solid rgb(254, 163, 1);
+}*/
 
 .banner-title {
     font-size: 3.5rem;
@@ -147,16 +157,15 @@ body {
 .curriculum-cards {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
     gap: 1rem;
 
 }
 
 .curriculum-cards-description {
-    width: 320px;
+    width: 370px;
     height: 476.78px;
     padding: 2rem;
-    border: 1px solid red;
     text-align: center;
 
 }
@@ -494,7 +503,9 @@ body {
     .menu-toggle:checked~.nav-button {
         display: flex;
     }
-
+    .border{
+        display: block;
+    }
     /* nav section ended*/
     /*banner section started*/
     .banner-section {
@@ -526,6 +537,7 @@ body {
     .curriculum-cards {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        padding:0 .75rem;
     }
 
     .curriculum-cards-description {
