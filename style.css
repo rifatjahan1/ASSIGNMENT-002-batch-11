@@ -18,6 +18,11 @@ body {
     padding: 1rem .5rem;
 
 }
+.marquee{
+    background-color: blueviolet;
+    height: 2rem;
+    color: aliceblue;
+}
 
 .navbar {
     display: flex;
