@@ -13,7 +13,7 @@ body {
 
 .container {
     width: 1200px;
-    background-color:white;
+    background-color: white;
     margin: 0 auto;
     padding: 1rem .5rem;
 
@@ -73,7 +73,7 @@ body {
 }
 
 .nav-button {
-    padding:10px;
+    padding: 10px;
     border-radius: .75rem;
     background: rgb(254, 163, 1);
     color: white;
@@ -87,13 +87,45 @@ body {
     background-color: #ff4500;
 }
 
+/*nav section ended*/
+/* banner-section */
+.banner-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem 0;
+}
+
+.banner-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.banner-details{
+    font-size: 1rem;
+    color: rgb(17, 17, 17);
+    margin: 2rem 0;
+}
+.btn{
+    outline: none;
+    border: 1px solid transparent;
+    padding: 16px 18px;
+    font-size: 18px;
+    border-radius: .5rem;
+    cursor: pointer;
+    background-color: rgb(17, 17, 17);
+    color: aliceblue;
+ 
+}
+
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-    .container{
-        width:100%;
+    .container {
+        width: 100%;
         margin: 0 auto;
         padding: 0px;
     }
+
     .hamburger {
         display: flex;
     }
@@ -130,5 +162,17 @@ body {
 
     .menu-toggle:checked~.nav-button {
         display: flex;
+    }
+
+    /* nav section ended*/
+    /*banner section started*/
+    .banner-section{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        padding-top: 6rem;
+    }
+    .banner-image img{
+        width: 100%;
     }
 }
