@@ -18,6 +18,7 @@ body {
     padding: 1rem .5rem;
 
 }
+
 .marquee{
     background-color: blueviolet;
     height: 2rem;
@@ -395,6 +396,58 @@ body {
     color: aliceblue;
     text-align: center;
 }
+/* story section ended*/
+.footer-section{
+    width: 100%;
+    height: 500px;
+    background: rgb(1, 172, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    
+
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    gap:.5rem;
+    
+}
+.footer-content h3{
+    color: white;
+}
+.footer-para{
+    color: white;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+.footer-logo{
+    background-color: white;
+    border-radius: 8px;
+}
+.footer-about-icon{
+    margin-bottom: 3rem;
+    color: white;
+}
+.footer-about h3{
+    color: white;
+}
+.footer-about ul li{
+    list-style: none;
+    margin-bottom: 4px;
+}
+.footer-about ul li a{
+   text-decoration: none;
+    color:white;
+    
+}
+
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
@@ -555,5 +608,24 @@ body {
     margin-top: 150px;
     margin-left: 130px;
 }
+/*footer section added*/
+.footer-section {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-description{
+    display: flex;
+    flex-direction: column;
+  
+}
+.footer-about{
+    margin-right: 9.5rem;
+}
+.footer-about-icon-content{
+    margin-right: 6rem;
+}
+
 
 }
